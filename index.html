@@ -1,1 +1,255 @@
-WIP
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+        
+        section h2:hover {
+            color: #764ba2;
+        }
+        
+        .toggle-icon {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+        
+        .toggle-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+        
+        .content-box {
+            transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+            overflow: hidden;
+            max-height: 1000px;
+            opacity: 1;
+        }
+        
+        .content-box.collapsed {
+            max-height: 0;
+            opacity: 0;
+            padding: 0;
+            border: none;
+        }
+        
+        .content-box {
+            width: 100%;
+            min-height: 150px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1em;
+            background: white;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .placeholder {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Closure Website</h1>
+            <p>Project Documentation & Closure</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#charter">1.2 Project Charter</a></li>
+                <li><a href="#status">1.3 Status Report</a></li>
+                <li><a href="#closure">1.4 Project Closure</a></li>
+                <li><a href="#star">1.5 STAR Stories</a></li>
+                <li><a href="#interviews">1.6 Stakeholder Interviews</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <section id="charter">
+                <h2>1.2 Project Charter</h2>
+                <div class="content-box">Enter project charter details here...
+
+Example content:
+- Project name and description
+- Project objectives and goals
+- Scope and deliverables
+- Key stakeholders
+- Timeline and milestones
+- Budget and resources</div>
+            </section>
+            
+            <section id="status">
+                <h2>1.3 Status Report</h2>
+                <div class="content-box">Enter status report information here...
+
+Example content:
+- Current project status
+- Completed milestones
+- Ongoing tasks
+- Issues and risks
+- Budget status
+- Next steps</div>
+            </section>
+            
+            <section id="closure">
+                <h2>1.4 Project Closure Document</h2>
+                <div class="content-box">Enter project closure documentation here...
+
+Example content:
+- Project summary
+- Final deliverables
+- Objectives achieved
+- Lessons learned
+- Outstanding items
+- Sign-off and approvals</div>
+            </section>
+            
+            <section id="star">
+                <h2>1.5 STAR Stories</h2>
+                <div class="content-box">Enter STAR stories here...
+
+STAR Format:
+- Situation: Context and background
+- Task: Specific challenge or responsibility
+- Action: Steps taken to address the task
+- Result: Outcomes and achievements
+
+Add multiple STAR stories as needed.</div>
+            </section>
+            
+            <section id="interviews">
+                <h2>1.6 Stakeholder Interviews</h2>
+                <div class="content-box">Enter stakeholder interview notes here...
+
+Example content:
+- Stakeholder name and role
+- Interview date
+- Key discussion points
+- Feedback and insights
+- Action items
+- Follow-up required</div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Closure Website | Project Documentation</p>
+        </footer>
+    </div>
+</body>
+</html>
