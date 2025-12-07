@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
@@ -21,7 +21,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             background: white;
             border-radius: 12px;
@@ -43,13 +43,17 @@
         
         .content {
             padding: 40px;
+            text-align: center;
         }
         
         .tiles-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin-top: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .tile {
@@ -60,6 +64,7 @@
             transition: all 0.3s ease;
             border: 2px solid transparent;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
         }
         
         .tile:hover {
@@ -105,6 +110,7 @@
             font-size: 1em;
             margin-bottom: 30px;
             transition: background 0.3s;
+            display: inline-block;
         }
         
         .back-button:hover {
@@ -114,27 +120,33 @@
         .subpage-content {
             background: #f8f9fa;
             border-radius: 8px;
-            padding: 30px;
+            padding: 40px;
             border-left: 4px solid #667eea;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
         }
         
         .subpage-content h2 {
             color: #667eea;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-size: 2em;
+            text-align: center;
         }
         
         .content-box {
             width: 100%;
-            min-height: 300px;
-            padding: 20px;
+            padding: 30px;
             border: 2px solid #e9ecef;
             border-radius: 6px;
             font-family: inherit;
-            font-size: 1em;
+            font-size: 1.05em;
+            line-height: 1.8;
             background: white;
-            white-space: pre-wrap;
+            white-space: pre-line;
             word-wrap: break-word;
+            text-align: left;
+            margin: 0 auto;
         }
         
         footer {
@@ -155,6 +167,15 @@
             
             .content {
                 padding: 20px;
+            }
+            
+            .subpage-content {
+                padding: 25px;
+            }
+            
+            .content-box {
+                padding: 20px;
+                font-size: 1em;
             }
         }
     </style>
@@ -407,8 +428,7 @@ Minor edits made to the webpage, as most of the work is done off of github.
                     <h2>1.6 Stakeholder Interviews</h2>
                     <div class="content-box">Stakeholder interviews were conducted with my manager; Kevin Chua. Originally I was going to 
                     interview a cybersecurity professional working for the university but they flaked. However, I was able to interview two Information 
-                    technology consultants, Franck Amichia and Jose Del Rio. They agreed to be recorded for the segments the professor requested, but not more due
-                    to time constraints. 
+                    technology consultants, Franck Amichia and Jose Del Rio. 
                     Interview Summary
                     Jose Del Rio: An ITC working for Student Life and Housing, Jose talked about how he used project management to develop a clear plan of action,
                     dividing up work and assigning people to roles they fit in to complete complex problems. He also talked a bit about his previous jobs and his
